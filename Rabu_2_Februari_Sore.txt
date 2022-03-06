@@ -1,0 +1,82 @@
+#nomor 1
+
+def tes_bagi(p,q):
+    if (p%q == 0):
+      return True
+    else:
+      return False
+
+p = int(input("Masukkan nilai p:"))
+
+q = int(input("Masukkan nilai q:"))
+
+print(tes_bagi(p,q))
+
+
+#nomor 2
+
+def menu():
+    global jml
+    global menus
+    print("* * * * MENU * * * *")
+    print("1. Soup and Salad")
+    print("2. Pasta with Meat Sauce")
+    print("3. Chef's special")
+menu()
+pilihan =int(input("Which number would you like to order? "))
+jml = int(input("Jumlah porsi yg ingin dipesan: "))
+
+if pilihan == 1:
+  menus=("Soup and Salad")
+  print(jml,menus,"coming right up!")
+
+elif pilihan == 2:
+  menus=("Pasta with Meat Sauce")
+  print(jml,menus,"coming right up!")
+
+elif pilihan == 3:
+  menus("Chef's special")
+  print(jml,menus,"coming right up!")
+        
+else:
+  print("Sorry, that is not a valid choice")
+
+
+#nomor 3
+
+import random
+def rand_divis_3():
+    blgn = random.randint(0, 6)
+    print("Bilangan acak yang dihasilkan adalah: " + str(blgn))
+    print("Apakah habis dibagi 3?: " + str(blgn%3 == 0))
+
+for i in range(0, 6):
+    rand_divis_3()
+
+
+#nomor 4
+
+    """"""
+    Fungsi ini akan berisi sebuah operasi untuk mengecek apakah dua buah variabel tidak sama, jika tidak sama
+    maka akan mereturn True, jika sama akan mengembalikan nilai False.\ 
+    """"""
+    if (a == b):
+        return False
+    else:
+        return True
+    
+    a = 10
+    b = 15
+
+    if (check_tidak_sama(a,b)):
+        print("A dan B tidak sama")
+    else:
+        print("A dan B sama")
+
+
+#nomor 5
+
+def ask_name():
+    name = input("Enter your name: ")
+    print("Your name is " +name)
+ask_name()
