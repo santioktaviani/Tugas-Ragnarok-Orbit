@@ -1,0 +1,162 @@
+#Nomor 1
+
+a= False   b = True   c = False
+a) (b and c) = False
+b) b or c = True
+c) not a and b = True
+d) (a and b) or not c = True
+e) not b and not(a or c) = False
+
+#nomor 2
+
+print('Hello!')
+something = input("Enter something:")
+print('You entered:' +something)
+
+#nomor 3
+
+print('Hello!')
+something = input("Enter something: ")
+if something == 'hello':
+    print("Hello for you too!")     
+elif something == 'hi':
+    print('Hi there!')
+else:
+      print("I don't know what," +something, "means.")
+
+#nomor 4
+
+#soal no4
+i = 0
+while i < 100:
+     print('halo','hai')
+     i += 1
+
+##Tabel Kemenangan
+#nomor 5a
+Pemain 1 Pemain 2 Pemenang batu kertas Pemain 2 batu gunting Pemain 1 batu batu seri kertas batu Pemain 1 kertas gunting Pemain 2 kertas kertas seri gunting batu Pemain 2 gunting kertas Pemain 1 gunting gunting seri
+
+#nomor 5b
+
+pilihan = str('Batu(b), Kertas(k) atau Gunting(g)?')
+pil_pemain1 = str(input("Pilihan Pemain 1: "+pilihan))
+pil_pemain2 = str(input("Pilihan Pemain 2: "+pilihan))
+
+if pil_pemain1 == pil_pemain2:
+  print("Seri")
+
+elif pil_pemain1 == 'b' and pil_pemain2 == 'g':
+  print("Pemain 1 menang")
+
+elif pil_pemain1 == 'b' and pil_pemain2 == 'k':
+  print("Pemain 2 menang")
+
+elif pil_pemain1 == 'k' and pil_pemain2 == 'b':
+  print("Pemain 1 menang")
+
+elif pil_pemain1 == 'k' and pil_pemain2 == 'g':
+  print("Pemain 2 menang")
+
+elif pil_pemain1 == 'g' and pil_pemain2 == 'b':
+  print("Pemain 2 menang")
+
+elif pil_pemain1 == 'g' and pil_pemain2 == 'k':
+  print("Pemain 1 menang")
+
+else:
+  print("Input tidak valid!")
+
+#nomor 6
+
+while (True):
+    kata =str(input("Enter word: "))
+    if kata == 'berhenti':
+        break
+    print("The Word is: "+kata)
+
+#nomor 7
+
+def menu():
+    global str
+    global int
+    print("MENU JAJANAN PASAR")
+    print("1. Donat - Rp 1.250")
+    print("2. Bakwan - Rp 1.000")
+    print("3. Onde-Onde - Rp 800")
+    print("4. Lemper - RP 1.250")
+    print("5. Risol - Rp 1.500")
+    
+while (True):
+    menu()
+    pilihan = int(input("Masukkan Pilihan Menu: "))
+
+    if pilihan == 1:
+        menus=("Donat")
+        print("Kamu memesan",menus,"dengan harga Rp 1250")
+
+    elif pilihan == 2:
+        menus=("Bakwan")
+        print("Kamu memesan",menus,"dengan harga Rp 1000")
+
+    elif pilihan == 3:
+        menus("Onde-Onde")
+        print("Kamu memesan",menus,"dengan harga Rp 800")
+
+    elif pilihan == 4:
+        menus("Lemper")
+        print("Kamu memesan",menus,"dengan harga Rp 1250")
+
+    elif pilihan == 5:
+        menus("Risol")
+        print("Kamu memesan",menus,"dengan harga Rp 1500")
+
+    else:
+        break
+
+
+## nomor 8
+
+def menu():
+    global str
+    global int
+    print("MENU JAJANAN PASAR")
+    print("1. Donat - Rp 1.250")
+    print("2. Bakwan - Rp 1.000")
+    print("3. Onde-Onde - Rp 800")
+    print("4. Lemper - RP 1.250")
+    print("5. Risol - Rp 1.500") 
+    print("6. cukup")
+    
+while (True):
+    menu()
+    pilihan = int(input("Masukkan Pilihan Menu: "))
+    jml = int(input("Jumlah porsi yg ingin dipesan: "))
+
+    if pilihan == 1:
+        ttl_harga = jml*1250
+        menus=("Donat")
+        print("Kamu memesan",menus,"dengan harga Rp",ttl_harga)
+
+    elif pilihan == 2:
+        ttl_harga = jml*1000
+        menus=("Bakwan")
+        print("Kamu memesan",menus,"dengan harga Rp",ttl_harga)
+
+    elif pilihan == 3:
+        ttl_harga = jml*800
+        menus("Onde-Onde")
+        print("Kamu memesan",menus,"dengan harga Rp",ttl_harga)
+
+    elif pilihan == 4:
+        ttl_harga = jml*1250
+        menus("Lemper")
+        print("Kamu memesan",menus,"dengan harga Rp",ttl_harga)
+
+    elif pilihan == 5:
+        ttl_harga = jml*1500
+        menus("Risol")
+        print("Kamu memesan",menus,"dengan harga Rp",ttl_harga)
+
+    else:
+        break
+        print("Terima Kasih sudah berbelanja jajanan pasar kami :)")
